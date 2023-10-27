@@ -49,8 +49,7 @@ test:
 
 To try out the example above yourself, fork the
 [Cypress Kitchen Sink](https://github.com/cypress-io/cypress-example-kitchensink)
-example project and place the above GitHub Action configuration in
-`.gitlab-ci.yml`.
+example project and place the above Gitlab CI configuration in `.gitlab-ci.yml`.
 
 :::
 
@@ -59,11 +58,11 @@ example project and place the above GitHub Action configuration in
 - On _push_ to this repository, this job will provision and start GitLab-hosted
   Linux instance for running the outlined `stages` declared in `script` with in
   the `test` job section of the configuration.
-- The code is checked out from our GitHub/GitLab repository.
+- The code is checked out from our GitLab repository.
 - Finally, our scripts will:
   - Install npm dependencies
   - Start the project web server (`npm start`)
-  - Run the Cypress tests within our GitHub repository within Electron.
+  - Run the Cypress tests within our Gitlab repository within Electron.
 
 ## Testing in Chrome and Firefox with Cypress Docker Images
 
